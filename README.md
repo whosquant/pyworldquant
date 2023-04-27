@@ -4,6 +4,7 @@
 
 PyWorldQuant is a helper for WorldQuant Brain Member that can automatically submit alpha factors in the [WorldQuant Brain Platform](https://platform.worldquantbrain.com/).
 
+It is also my early version of research job. In this project,i use multiprocess and Brain API to make my research on Brain Platform more easily and efficiently. May the code be helpful to anyone who wants to do research on Brain Platform.
 ## Documentation
 
 - **[Quick start guide 🚀](./docs/GETTING-STARTED.md)**
@@ -25,14 +26,30 @@ pyworldquant/
 ```
 
 
-## Quick Start
+## Brief WorkFlow
 ### alpha workfow
 ![insample](./doc/c1.png)
 
 ### Brain Platform workflow
 ![insample](./doc/c2.png)
 
+## Quick Start
 
+1,fill in your own usename and key in config.py.
 
+2,choose your research settinglist in settinglist which also located in config.py. If you do not have preference in region and universe,you can use the default setting.
 
+3,build your own alphapool by creating your own alpha generator.If you do not have preference, you can try my alphapool demo as first try.
+
+4,install the necessary package
+
+```sh
+pip install -r requirement.txt
+```
+
+5, run the alphatest.py
+
+```sh
+python3 alphatest.py 
+```
 
