@@ -58,8 +58,9 @@ pip install -r requirement.txt
 python3 alphatest.py 
 ```
 
-## TO be continued
-If you like WorldQuant Brain or you love crypto,you can contact me with more. 
+## To be continued
+1,work on how to make the alphapool more effective.
+2,work on how to maker better use of the given dataset to formulate better alpha.
 
-Dont forget to give me a star,if get more stars than 100,i will develop the next version of alpha excavator and the performance analyzer.
+
 
