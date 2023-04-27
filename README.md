@@ -9,6 +9,22 @@ PyWorldQuant is a helper for WorldQuant Brain Member that can automatically subm
 - **[Quick start guide 🚀](./docs/GETTING-STARTED.md)**
 - **[Official API documention 📡](https://platform.worldquantbrain.com/learn/documentation/consultant-information/brain-api)**
 
+## Project Structure
+
+```sh
+pyworldquant/
+|-- alpha_generator
+|   |-- alpha_workshop.py
+|   |-- alphapool.csv
+|-- doc
+|-- data
+|-- LICENSE
+|-- README.md
+|-- requirements.txt
+|-- alphatest.py
+```
+
+
 ## Quick Start
 
 
