@@ -56,5 +56,5 @@ python3 alphatest.py
 ## TO be continued
 If you like WorldQuant Brain or you love crypto,you can contact me with more. 
 
-Dont forget to give me a star,if get more stars than 100,i will reveal the next version of alpha excavator.
+Dont forget to give me a star,if get more stars than 100,i will develop the next version of alpha excavator and the performance analyzer.
 
