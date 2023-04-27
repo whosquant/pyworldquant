@@ -5,6 +5,10 @@
 PyWorldQuant is a helper for WorldQuant Brain Member that can automatically submit alpha factors in the [WorldQuant Brain Platform](https://platform.worldquantbrain.com/).
 
 It is also my early version of research job. In this project,i use multiprocess and Brain API to make my research on Brain Platform more easily and efficiently. May the code be helpful to anyone who wants to do research on Brain Platform.
+
+Advantage:easy to use,need less time to simulate and collect the performance data,easy to adjust your parameter with in the alpha.
+disadvantage:need to update as the platform develops
+
 ## Documentation
 
 - **[Quick start guide 🚀](./docs/GETTING-STARTED.md)**
