@@ -21,6 +21,7 @@ pyworldquant/
 |-- alpha_generator
 |   |-- alpha_workshop.py
 |   |-- alphapool.csv
+|   |-- 101alpha_Convert.txt
 |-- doc
 |-- data
 |-- LICENSE
@@ -43,7 +44,7 @@ pyworldquant/
 
 2,choose your research settinglist in settinglist which also located in config.py. If you do not have preference in region and universe,you can use the default setting.
 
-3,build your own alphapool by creating your own alpha generator.If you do not have preference, you can try my alphapool demo as first try.
+3,build your own alphapool by creating your own alpha generator.If you do not have preference, you can try my alphapool demo or WorldQuant alpha101 as your first try.
 
 4,install the necessary package
 
