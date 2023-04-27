@@ -26,7 +26,9 @@ pyworldquant/
 
 
 ## Quick Start
+![insample](./doc/c1.png)
 
+![insample](./doc/c2.png)
 
 
 
