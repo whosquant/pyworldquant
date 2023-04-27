@@ -26,8 +26,10 @@ pyworldquant/
 
 
 ## Quick Start
+### alpha workfow
 ![insample](./doc/c1.png)
 
+### Brain Platform workflow
 ![insample](./doc/c2.png)
 
 
