@@ -4,12 +4,15 @@
 
 PyWorldQuant is a helper for WorldQuant Brain Member that can automatically submit alpha factors in the [WorldQuant Brain Platform](https://platform.worldquantbrain.com/).
 
-## Highlights
+## Documentation
 
-* Detailed function and multi-dimension information  with source code
-* Super easy to use, no source code change for most features, no package dependency
-* Logs arbitrary function/variable using RegEx without code change
-* Works on Linux/MacOS/Windows
+- **[Quick start guide 🚀](./docs/GETTING-STARTED.md)**
+- **[Official API documention 📡](https://platform.worldquantbrain.com/learn/documentation/consultant-information/brain-api)**
 
-* Supports threading, multiprocessing, subprocess and async (unfinished)
-* Powerful front-end, able to render GB-level trace smoothly (unfinished)
+## Quick Start
+
+
+
+
+
+
