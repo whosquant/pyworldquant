@@ -1,4 +1,4 @@
-<h1 align="center">Python TradingView TA by Analyzer.REST</h1>
+<h1 align="center">PyWorldQuant by whosquant</h1>
 <div align="center">
   <img src="https://img.shields.io/readthedocs/pyworldquant/latest?style=for-the-badge" />
   <img src="https://img.shields.io/github/license/whosquant/pyworldquant?style=for-the-badge" />
