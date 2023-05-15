@@ -1,12 +1,12 @@
 
 
 import os
-# os.environ["http_proxy"] = "http://127.0.0.1:10809"
-# os.environ["https_proxy"] = "http://127.0.0.1:10809"
+os.environ["http_proxy"] = "http://127.0.0.1:10809"
+os.environ["https_proxy"] = "http://127.0.0.1:10809"
 
 from pyworldquant.spot import Spot as Client
-username = 'uibemzz@163.com'
-password = 'Tianxiadiyi1!'
+username = 'xxxxx@xxxx.com'
+password = 'xxxxxx'
 # HMAC: pass API key and secret
 client = Client(username, password)
 
@@ -16,9 +16,5 @@ settings = {'name': 'USA3000',
                            "language": "FASTEXPR", "decay": 18, "neutralization": "INDUSTRY", "visualization": False}}
 regular = 'close'
 
-payload = client.simulate1(regular,settings)
+payload = client.simulate(regular,settings)
 print(payload)
-a = client.simulate2(payload)
-print(a)
-b = client.brief_performance(a)
-print(b)
