@@ -1,10 +1,10 @@
-from pyworldquant.spot import Spot as Client
+
 
 import os
 # os.environ["http_proxy"] = "http://127.0.0.1:10809"
 # os.environ["https_proxy"] = "http://127.0.0.1:10809"
 
-
+from pyworldquant.spot import Spot as Client
 username = 'uibemzz@163.com'
 password = 'Tianxiadiyi1!'
 # HMAC: pass API key and secret
