@@ -37,8 +37,10 @@ def simulate(self,regular,setting):
         regular
         settings
     """
-    simulate1(regular,setting)
-    return
+    payload = self.simulate1(regular,setting)
+    a = self.simulate2(payload)
+    b = self.brief_performance(a)
+    return b
 
 
 def simulate1(self,regular,setting):
@@ -60,7 +62,7 @@ def simulate1(self,regular,setting):
         else:
             try:
                 alphaid = response.headers['Location'][44:]
-                print('用户【{}】获取alphaid:【{}】成功！ '.format(self.username, alphaid))
+                print('fetch alphaid1 success！')
                 payload['alphaid1'] = alphaid
                 return payload
             except:

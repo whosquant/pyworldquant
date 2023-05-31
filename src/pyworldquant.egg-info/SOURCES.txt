@@ -1,7 +1,6 @@
 LICENSE
 README.md
 pyproject.toml
-src/pyworldquant/__init__.py
 src/pyworldquant/__version__.py
 src/pyworldquant/api.py
 src/pyworldquant.egg-info/PKG-INFO

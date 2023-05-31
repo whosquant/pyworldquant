@@ -62,7 +62,7 @@ def simulate1(self,regular,setting):
         else:
             try:
                 alphaid = response.headers['Location'][44:]
-                print('用户【{}】获取alphaid:【{}】成功！ '.format(self.username, alphaid))
+                print('fetch alphaid1 success！')
                 payload['alphaid1'] = alphaid
                 return payload
             except:

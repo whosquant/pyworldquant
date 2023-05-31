@@ -1,6 +1,6 @@
 [project]
 name = 'pyworldquant'
-version = '0.0.1'
+version = '0.0.2'
 classifiers = [
     'Development Status :: 1 - Planning',
     'Intended Audience :: Education',

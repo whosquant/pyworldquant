@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: pyworldquant
-Version: 0.0.1
+Version: 0.0.2
 Summary: A python tool developed for WorldQuant Brain Platform User
 Author-email: Jeremy Meng <jeremytousnet@gmail.com>
 License: Mozilla Public License Version 2.0
@@ -391,38 +391,28 @@ Provides-Extra: dev
 Provides-Extra: test
 License-File: LICENSE
 
-# PyWorldQuant
+<h1 align="center">PyWorldQuant by whosquant</h1>
+<div align="center">
+  <img src="https://img.shields.io/readthedocs/pyworldquant/latest?style=for-the-badge" />
+  <img src="https://img.shields.io/github/license/whosquant/pyworldquant?style=for-the-badge" />
+  <img src="https://img.shields.io/pypi/v/pyworldquant?style=for-the-badge" />
+  <img src="https://img.shields.io/github/last-commit/whosquant/pyworldquant?style=for-the-badge" />
+</div>
+<br>
+<div align="center">
+  <p>A helper for WorldQuant Brain Member to automatically submit alpha factors in the <a href="https://platform.worldquantbrain.com/">WorldQuant Brain</a>.</p>
+  <img src="https://platform.worldquantbrain.com/share-logo.png" />
+</div>
 
-[![build](https://github.com/whosquant/pyworldquant/workflows/build/badge.svg)](https://github.com/whosquant/pyworldquant/actions?query=workflow%3Abuild)  [![flake8](https://github.com/whosquant/pyworldquant/workflows/lint/badge.svg)](https://github.com/whosquant/pyworldquant/viztracer/actions?query=workflow%3ALint)   [![license](https://img.shields.io/github/license/whosquant/pyworldquant)](https://github.com/whosquant/pyworldquant/blob/master/LICENSE)  [![commit](https://img.shields.io/github/last-commit/whosquant/pyworldquant)](https://github.com/whosquant/pyworldquant/commits/master)  
 
-PyWorldQuant is a helper for WorldQuant Brain Member that can automatically submit alpha factors in the [WorldQuant Brain Platform](https://platform.worldquantbrain.com/).
 
-It is also my early version of research job. In this project,i use multiprocess and Brain API to make my research on Brain Platform more easily and efficiently. May the code be helpful to anyone who wants to do research on Brain Platform.
+ [![flake8](https://github.com/whosquant/pyworldquant/workflows/lint/badge.svg)](https://github.com/whosquant/pyworldquant/actions?query=workflow%3ALint)   [![license](https://img.shields.io/github/license/whosquant/pyworldquant)](https://github.com/whosquant/pyworldquant/blob/master/LICENSE)  [![commit](https://img.shields.io/github/last-commit/whosquant/pyworldquant)](https://github.com/whosquant/pyworldquant/commits/master)  [![pypi](https://img.shields.io/pypi/v/pyworldquant.svg)](https://pypi.org/project/pyworldquant/)
 
-Advantage:easy to use,need less time to simulate and collect the performance data,easy to adjust your parameter with in the alpha.
-disadvantage:need to update as the platform develops
 
 ## Documentation
 
 - **[Quick start guide 🚀](./docs/GETTING-STARTED.md)**
 - **[Official API documention 📡](https://platform.worldquantbrain.com/learn/documentation/consultant-information/brain-api)**
-
-## Project Structure
-
-```sh
-pyworldquant/
-|-- alpha_generator
-|   |-- alpha_workshop.py
-|   |-- alphapool.csv
-|   |-- 101alpha_Convert.txt
-|-- doc
-|-- data
-|-- LICENSE
-|-- README.md
-|-- requirements.txt
-|-- alphatest.py
-```
-
 
 ## Brief WorkFlow
 ### alpha workfow
@@ -431,29 +421,41 @@ pyworldquant/
 ### Brain Platform workflow
 ![insample](./doc/c2.png)
 
-## Quick Start
+## Installation
+ [PyPI](https://pypi.org/project/pyworldquant/) (stable, recommended):
+ 
+```pip install pyworldquant```
 
-1,fill in your own usename and key in config.py.
+## Example
+```python
+from pyworldquant.spot import Spot as Client
+username = 'xxxxx@xxx.com'
+password = 'xxxxxxx'
+# login
+client = Client(username, password)
 
-2,choose your research settinglist in settinglist which also located in config.py. If you do not have preference in region and universe,you can use the default setting.
-
-3,build your own alphapool by creating your own alpha generator.If you do not have preference, you can try my alphapool demo or WorldQuant alpha101 as your first try.
-
-4,install the necessary package
-
-```sh
-pip install -r requirement.txt
+settings = {'name': 'USA3000',
+              'settings': {"nanHandling": "ON", "instrumentType": "EQUITY", "delay": 1, "universe": "TOP3000",
+                           "truncation": 0.05, "unitHandling": "VERIFY", "pasteurization": "ON", "region": "USA",
+                           "language": "FASTEXPR", "decay": 10, "neutralization": "INDUSTRY", "visualization": False}}
+regular = 'close'
+# simulate
+performance = client.simulate(regular,settings)
+print(performance)
+# Example output: {"LOW_SHARPE": , "LOW_FITNESS": , "HIGH_TURNOVER": , "LOW_SUB_UNIVERSE_SHARPE": }
 ```
 
-5, run the alphatest.py
-
-```sh
-python3 alphatest.py 
-```
 
 ## To be continued
 1,work on how to make the alphapool more effective.
 2,work on how to maker better use of the given dataset to formulate better alpha.
 
+## Issue
+ If you found a bug or have a question, please open an issue. Email will also be replied.
+  
+## Warning
+ pulling too much requests is dangerous. Never leave your ineffective crawler running on server.
 
+## Contributing
+ Pull requests (docs, bug fix, features) are welcomed! Any pull request (documentation, bug fix, features, etc) are welcomed.
 
