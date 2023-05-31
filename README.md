@@ -13,8 +13,6 @@
 
 
 
- [![flake8](https://github.com/whosquant/pyworldquant/workflows/lint/badge.svg)](https://github.com/whosquant/pyworldquant/actions?query=workflow%3ALint)   [![license](https://img.shields.io/github/license/whosquant/pyworldquant)](https://github.com/whosquant/pyworldquant/blob/master/LICENSE)  [![commit](https://img.shields.io/github/last-commit/whosquant/pyworldquant)](https://github.com/whosquant/pyworldquant/commits/master)  [![pypi](https://img.shields.io/pypi/v/pyworldquant.svg)](https://pypi.org/project/pyworldquant/)
-
 
 ## Documentation
 
