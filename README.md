@@ -7,7 +7,7 @@
 </div>
 <br>
 <div align="center">
-  <p>A helper for WorldQuant Brain Member to automatically submit alpha factors in the <a href="https://platform.worldquantbrain.com/">WorldQuant Brain</a>.</p>
+  <p>A helper for WorldQuant Brain Consultant to automatically submit alpha factors in the <a href="https://platform.worldquantbrain.com/">WorldQuant Brain</a>.</p>
   <img src="https://platform.worldquantbrain.com/share-logo.png" />
 </div>
 
